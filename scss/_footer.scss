@@ -1,0 +1,6 @@
+footer{
+    @include uflex(flex, center, center);
+    background-color: $second-color;
+    padding: 1.875rem;
+    color: #fff;
+}
