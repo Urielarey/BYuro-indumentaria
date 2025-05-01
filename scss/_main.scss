@@ -20,13 +20,18 @@
     object-fit: cover;
     height: 100%;
 }
+.u-destacado {
+    @include ucard(flex, row, center, center);
+}
 .imgdestacado{
-    @include uflex(flex, center, center);
     padding-top: 1.875rem;
-    padding-bottom: 3.125rem;}
+    padding-bottom: 3.125rem;
+    padding-right: 1.25rem;
+    padding-left: 1.25rem;
+}
 .pimg{
-    @include uflex(flex, center, center);
     padding: 1.25rem;
+    text-align: center;
 }
 .destacadoh2{
     font-family: crafity;
@@ -37,4 +42,17 @@
     background-color: $second-color;
     border-radius: .3125rem;
     color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    &:hover {
+        background-color: #fff;
+        transform: scale(1.01);
+        color: $second-color;
+    }
+}
+@media (max-width: $mobile) {
+
+    .u-destacado {
+        @include ucard(flex, column, center, center);
+    }
 }

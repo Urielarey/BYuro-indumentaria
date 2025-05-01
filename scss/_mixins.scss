@@ -1,5 +1,14 @@
-@mixin uflex ($display, $justify-content, $aling-items){
+@mixin uflex ($display, $justify-content, $align-items){
     display: $display;
     justify-content: $justify-content;
-    align-items: $aling-items;
+    align-items: $align-items;
 }
+@mixin ucard($display, $flex-direction, $justify-content, $align-items) {
+    display: $display;
+    flex-direction: $flex-direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}
+$mobile: 768px;
+$tablet: 1024px;
+
