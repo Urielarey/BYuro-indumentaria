@@ -4,16 +4,38 @@
   background-color: #191716;
   color: #fff;
   padding: 2px;
+  font-family: montserrat3;
 }
 
+nav {
+  font-family: montserrat;
+}
+
+@font-face {
+  font-family: montserrat;
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: montserrat2;
+  src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: montserrat3;
+  src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 400;
+}
 .logo {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 .winter {
   background-color: #191716;
+  width: 100%;
 }
 
 .winterArticle {
@@ -23,7 +45,7 @@
   padding-top: 1.25rem;
   padding-bottom: 3.125rem;
   color: #fff;
-  font-family: crafity;
+  font-family: montserrat;
 }
 
 .mi-carousel {
@@ -53,10 +75,11 @@
 .pimg {
   padding: 1.25rem;
   text-align: center;
+  font-family: montserrat;
 }
 
 .destacadoh2 {
-  font-family: crafity;
+  font-family: montserrat;
   text-align: center;
   padding-top: 1.875rem;
 }
@@ -67,6 +90,7 @@
   color: #fff;
   cursor: pointer;
   transition: all 0.3s ease;
+  font-family: montserrat;
 }
 .button:hover {
   background-color: #fff;
@@ -82,19 +106,39 @@
     align-items: center;
   }
 }
+@media (max-width: 1024px) {
+  .u-destacado {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 footer {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #191716;
   padding: 1.875rem;
   color: #fff;
   text-align: center;
+  font-family: montserrat3;
 }
 
 @font-face {
-  font-family: crafity;
-  src: url("../assets/DMSans_18pt-Black.ttf") format("truetype");
+  font-family: montserrat;
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: montserrat2;
+  src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: montserrat3;
+  src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
   font-weight: 400;
 }
 * {
