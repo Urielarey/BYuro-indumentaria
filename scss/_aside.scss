@@ -4,45 +4,60 @@
     font-family: montserrat2;
 }
 .remeras{
-    background-color: #000;
+    background-color: $second-color;
     color: #fff;
     width: 300px;
     height: 300px;
     text-align: center;
     border-radius: 10px;
+    transition: all 0.3s ease;
     @include uflex(flex, center, center);
     &:hover {
-        background-color: #dbd4d3;
+        transform: scale(1.01);
+        background-color: #fff;
         transform: scale(1.01);
         color: $second-color;
+        border-width: 2px;
+        border-color: $second-color;
+        border-style: solid;
     }
 }
 .buzos{
-    background-color: #000;
+    background-color: $second-color;
     color: #fff;
     width: 300px;
     height: 300px;
     text-align: center;
     border-radius: 10px;
+    transition: all 0.3s ease;
     @include uflex(flex, center, center);
     &:hover {
-        background-color: #dbd4d3;
+        transform: scale(1.01);
+        background-color: #fff;
         transform: scale(1.01);
         color: $second-color;
+        border-width: 2px;
+        border-color: $second-color;
+        border-style: solid;
     }
 }
 .short{
-    background-color: #000;
+    background-color: $second-color;
     color: #fff;
     width: 300px;
     height: 300px;
     text-align: center;
     border-radius: 10px;
+    transition: all 0.3s ease;
     @include uflex(flex, center, center);
     &:hover {
-        background-color: #dbd4d3;
+        transform: scale(1.01);
+        background-color: #fff;
         transform: scale(1.01);
         color: $second-color;
+        border-width: 2px;
+        border-color: $second-color;
+        border-style: solid;
     }
 }
 .titleaside h2{
