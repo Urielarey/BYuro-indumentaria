@@ -9,3 +9,20 @@
 nav{
     font-family: montserrat;
 }
+.scroll-up-btn {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    text-decoration: none;
+    background-color: #333;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 3.125rem;
+    font-size: 1.25rem;
+    display: inline-block;
+    z-index: 1000;
+}
+.scroll-up-btn:hover {
+    background-color: #555;
+}
+

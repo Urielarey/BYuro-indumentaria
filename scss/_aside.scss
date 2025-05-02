@@ -1,0 +1,100 @@
+.catalogo{
+    @include ucard(flex, row, space-around, center);
+    padding: 30px;
+    font-family: montserrat2;
+}
+.remeras{
+    background-color: #000;
+    color: #fff;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    @include uflex(flex, center, center);
+    &:hover {
+        background-color: #dbd4d3;
+        transform: scale(1.01);
+        color: $second-color;
+    }
+}
+.buzos{
+    background-color: #000;
+    color: #fff;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    @include uflex(flex, center, center);
+    &:hover {
+        background-color: #dbd4d3;
+        transform: scale(1.01);
+        color: $second-color;
+    }
+}
+.short{
+    background-color: #000;
+    color: #fff;
+    width: 300px;
+    height: 300px;
+    text-align: center;
+    border-radius: 10px;
+    @include uflex(flex, center, center);
+    &:hover {
+        background-color: #dbd4d3;
+        transform: scale(1.01);
+        color: $second-color;
+    }
+}
+.titleaside h2{
+    text-align: center;
+    padding: 1.875rem;
+    font-family: montserrat;
+}
+@media (max-width: $mobile) {
+
+    .catalogo {
+        @include ucard(flex, column, center, center);
+    }
+    .remeras{
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        margin: 20px;
+    }
+    .buzos{
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        margin: 20px;
+    }
+    .short{
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        margin: 20px;
+    }
+}
+@media (max-width: $tablet) {
+    .catalogo {
+        @include ucard(flex, column, center, center);
+    }
+    .remeras{     
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        margin: 20px;
+
+    }
+    .buzos{
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        margin: 20px;
+    }
+    .short{
+        width: 200px;
+        height: 200px;
+        padding: 20px;
+        margin: 20px;
+    }
+}
