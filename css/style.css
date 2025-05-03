@@ -263,6 +263,19 @@ input, textarea {
   font-family: montserrat3;
 }
 
+/*Styles para remeras, buzos y short*/
+.catalogos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
+  gap: 2rem; /* espacio entre las cards */
+  justify-content: center; /* centra el grid horizontalmente */
+  padding: 2rem;
+}
+
+.card {
+  justify-self: center; /* centra cada tarjeta si es más chica que su celda */
+}
+
 /*Media queries*/
 @media (max-width: 768px) {
   .u-destacado {
@@ -341,6 +354,11 @@ input, textarea {
     font-family: montserrat3;
     padding: 0 10px;
   }
+  .catalogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 }
 @media (max-width: 1024px) {
   .u-destacado {
@@ -365,6 +383,11 @@ input, textarea {
   }
   .maph5 {
     display: none;
+  }
+  .catalogos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 footer {
@@ -410,6 +433,10 @@ a.sin-decoracion:hover {
   align-items: center;
   padding: 30px;
   font-family: montserrat2;
+}
+
+.catalogo a {
+  text-decoration: none;
 }
 
 .remeras {
