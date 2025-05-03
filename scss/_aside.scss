@@ -11,6 +11,7 @@
     text-align: center;
     border-radius: 10px;
     transition: all 0.3s ease;
+    cursor: pointer;
     @include uflex(flex, center, center);
     &:hover {
         transform: scale(1.01);
@@ -30,6 +31,7 @@
     text-align: center;
     border-radius: 10px;
     transition: all 0.3s ease;
+    cursor: pointer;
     @include uflex(flex, center, center);
     &:hover {
         transform: scale(1.01);
@@ -49,6 +51,7 @@
     text-align: center;
     border-radius: 10px;
     transition: all 0.3s ease;
+    cursor: pointer;
     @include uflex(flex, center, center);
     &:hover {
         transform: scale(1.01);

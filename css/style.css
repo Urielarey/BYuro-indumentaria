@@ -1,3 +1,4 @@
+@charset "UTF-8";
 .u-envios {
   display: flex;
   justify-content: center;
@@ -53,6 +54,7 @@ nav {
   width: 100%;
 }
 
+/*Styles del index*/
 .winter {
   background-color: #191716;
   width: 100%;
@@ -118,11 +120,13 @@ nav {
   color: #191716;
 }
 
+/*Styles del Contacto*/
 .form-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3.125rem 1.25rem;
+  font-family: montserrat3;
 }
 
 .form-container {
@@ -175,6 +179,7 @@ input, textarea {
   text-align: center;
 }
 
+/*Styles del sucursales*/
 .maps {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -196,8 +201,69 @@ input, textarea {
 .maps .map-item h5 {
   margin-top: 10px;
   text-align: center;
+  font-family: montserrat3;
+  padding: 1.25rem;
 }
 
+/*Styles del ayuda*/
+.h4 {
+  font-family: montserrat2;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: white !important;
+  color: black !important;
+  box-shadow: none;
+}
+
+.cambios h6 {
+  text-align: center;
+  font-family: montserrat2;
+}
+
+.contenedorp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cambiosp {
+  width: 50%;
+  font-family: montserrat3;
+  text-align: center;
+}
+
+.cambios li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: montserrat3;
+  padding: 10px;
+  list-style: none;
+}
+
+.cuidado li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: montserrat3;
+  padding-bottom: 1.875rem;
+  list-style: none;
+}
+
+.cuidado ul {
+  padding: 10px;
+}
+
+.cuidado p {
+  text-align: center;
+  font-family: montserrat3;
+}
+
+/*Media queries*/
 @media (max-width: 768px) {
   .u-destacado {
     display: flex;
@@ -221,6 +287,59 @@ input, textarea {
   }
   .maph5 {
     display: none;
+  }
+  .h4 {
+    font-family: montserrat2;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 15px;
+  }
+  .accordion-button:not(.collapsed) {
+    background-color: white !important;
+    color: black !important;
+    box-shadow: none;
+  }
+  .cambios h6 {
+    text-align: center;
+    font-family: montserrat2;
+  }
+  .contenedorp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+  }
+  .cambiosp {
+    width: 90%; /* más ancho en móviles */
+    font-family: montserrat3;
+    text-align: center;
+  }
+  .cambios li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat3;
+    padding: 8px;
+    list-style: none;
+    text-align: center;
+  }
+  .cuidado li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: montserrat3;
+    padding-bottom: 1rem;
+    list-style: none;
+    text-align: center;
+  }
+  .cuidado ul {
+    padding: 10px;
+  }
+  .cuidado p {
+    text-align: center;
+    font-family: montserrat3;
+    padding: 0 10px;
   }
 }
 @media (max-width: 1024px) {
@@ -301,6 +420,7 @@ a.sin-decoracion:hover {
   text-align: center;
   border-radius: 10px;
   transition: all 0.3s ease;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -323,6 +443,7 @@ a.sin-decoracion:hover {
   text-align: center;
   border-radius: 10px;
   transition: all 0.3s ease;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -345,6 +466,7 @@ a.sin-decoracion:hover {
   text-align: center;
   border-radius: 10px;
   transition: all 0.3s ease;
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
