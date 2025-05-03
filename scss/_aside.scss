@@ -9,10 +9,10 @@
 .remeras{
     background-color: $second-color;
     color: #fff;
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
     transition: all 0.3s ease;
     cursor: pointer;
     @include uflex(flex, center, center);
@@ -21,7 +21,7 @@
         background-color: #fff;
         transform: scale(1.01);
         color: $second-color;
-        border-width: 2px;
+        border-width: .125rem;
         border-color: $second-color;
         border-style: solid;
     }
@@ -29,10 +29,10 @@
 .buzos{
     background-color: $second-color;
     color: #fff;
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
     transition: all 0.3s ease;
     cursor: pointer;
     @include uflex(flex, center, center);
@@ -41,7 +41,7 @@
         background-color: #fff;
         transform: scale(1.01);
         color: $second-color;
-        border-width: 2px;
+        border-width: .125rem;
         border-color: $second-color;
         border-style: solid;
     }
@@ -49,10 +49,10 @@
 .short{
     background-color: $second-color;
     color: #fff;
-    width: 300px;
-    height: 300px;
+    width: 18.75rem;
+    height: 18.75rem;
     text-align: center;
-    border-radius: 10px;
+    border-radius: .625rem;
     transition: all 0.3s ease;
     cursor: pointer;
     @include uflex(flex, center, center);
@@ -61,7 +61,7 @@
         background-color: #fff;
         transform: scale(1.01);
         color: $second-color;
-        border-width: 2px;
+        border-width: .125rem;
         border-color: $second-color;
         border-style: solid;
     }
@@ -77,22 +77,22 @@
         @include ucard(flex, column, center, center);
     }
     .remeras{
-        width: 200px;
-        height: 200px;
-        padding: 20px;
-        margin: 20px;
+        width: 12.5rem;
+        height: 12.5rem;
+        padding: 1.25rem;
+        margin: 1.25rem;
     }
     .buzos{
-        width: 200px;
-        height: 200px;
-        padding: 20px;
-        margin: 20px;
+        width: 12.5rem;
+        height: 12.5rem;
+        padding: 1.25rem;
+        margin: 1.25rem;
     }
     .short{
-        width: 200px;
-        height: 200px;
-        padding: 20px;
-        margin: 20px;
+        width: 12.5rem;
+        height: 12.5rem;
+        padding: 1.25rem;
+        margin: 1.25rem;
     }
 }
 @media (max-width: $tablet) {
@@ -100,22 +100,22 @@
         @include ucard(flex, column, center, center);
     }
     .remeras{     
-        width: 200px;
-        height: 200px;
-        padding: 20px;
-        margin: 20px;
+        width: 12.5rem;
+        height: 12.5rem;
+        padding: 1.25rem;
+        margin: 1.25rem;
 
     }
     .buzos{
-        width: 200px;
-        height: 200px;
-        padding: 20px;
-        margin: 20px;
+        width: 12.5rem;
+        height: 12.5rem;
+        padding: 1.25rem;
+        margin: 1.25rem;
     }
     .short{
-        width: 200px;
-        height: 200px;
-        padding: 20px;
-        margin: 20px;
+        width: 12.5rem;
+        height: 12.5rem;
+        padding: 1.25rem;
+        margin: 1.25rem;
     }
 }

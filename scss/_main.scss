@@ -109,22 +109,22 @@ input,textarea {
 /*Styles del sucursales*/
 .maps {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+    gap: 1.875rem;
     justify-items: center;
-    padding: 20px;
+    padding: 1.25rem;
     .map-item {
     display: flex;
     flex-direction: column;
     align-items: center;
     iframe {
         width: 100%;
-        max-width: 600px;
-        height: 450px;
+        max-width: 37.5rem;
+        height: 28.125rem;
         border: none;
     }
     h5 {
-        margin-top: 10px;
+        margin-top: .625rem;
         text-align: center;
         font-family: montserrat3;
         padding: 1.25rem;
@@ -135,8 +135,8 @@ input,textarea {
 .h4{
     font-family: montserrat2;
     text-align: center;
-    padding-top: 30px;
-    padding-bottom: 20px;
+    padding-top: 1.875rem;
+    padding-bottom: 1.25rem;
 }
 .accordion-button:not(.collapsed) {
     background-color: white !important;
@@ -158,7 +158,7 @@ input,textarea {
 .cambios li{
     @include uflex(flex, center, center);
     font-family: montserrat3;
-    padding: 10px;
+    padding: .625rem;
     list-style: none;
 }
 .cuidado li{
@@ -168,7 +168,7 @@ input,textarea {
     list-style: none;
 }
 .cuidado ul{
-    padding: 10px;
+    padding: .625rem;
 }
 .cuidado p{
     text-align: center;
@@ -181,6 +181,9 @@ input,textarea {
     gap: 2rem; /* espacio entre las cards */
     justify-content: center; /* centra el grid horizontalmente */
     padding: 2rem;
+}
+.catalogos button{
+    padding: .625rem;
 }
 
 .card {
@@ -195,10 +198,10 @@ input,textarea {
         @include ucard(flex, column, center, center);
     }
     .map-item {
-        width: 200px;
-        height: 200px;
+        width: 12.5rem;
+        height: 12.5rem;
         @include uflex(flex, center, center);
-        padding: 20px;
+        padding: 1.25rem;
     }
     .maph5{
         display: none;
@@ -206,8 +209,8 @@ input,textarea {
     .h4 {
         font-family: montserrat2;
         text-align: center;
-        padding-top: 20px;
-        padding-bottom: 15px;
+        padding-top: 1.25rem;
+        padding-bottom: .9375rem;
     }
     
     .accordion-button:not(.collapsed) {
@@ -226,7 +229,7 @@ input,textarea {
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        padding: 10px;
+        padding: .625rem;
     }
     
     .cambiosp {
@@ -240,7 +243,7 @@ input,textarea {
         justify-content: center;
         align-items: center;
         font-family: montserrat3;
-        padding: 8px;
+        padding: .5rem;
         list-style: none;
         text-align: center;
     }
@@ -256,13 +259,13 @@ input,textarea {
     }
     
     .cuidado ul {
-        padding: 10px;
+        padding: .625rem;
     }
     
     .cuidado p {
         text-align: center;
         font-family: montserrat3;
-        padding: 0 10px;
+        padding: 0 .625rem;
     }
     .catalogos{
         display: flex;
@@ -279,10 +282,10 @@ input,textarea {
         @include ucard(flex, column, center, center);
     }
     .map-item {
-        width: 250px;
-        height: 250px;
+        width: 15.625rem;
+        height: 15.625rem;
         @include uflex(flex, center, center);
-        padding: 20px;
+        padding: 1.25rem;
     }
     .maph5{
         display: none;

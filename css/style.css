@@ -4,7 +4,7 @@
   justify-content: center;
   background-color: #191716;
   color: #fff;
-  padding: 2px;
+  padding: 0.125rem;
   font-family: montserrat3;
 }
 
@@ -20,7 +20,7 @@ nav {
   text-decoration: none;
   background-color: #333;
   color: white;
-  padding: 10px 15px;
+  padding: 0.625rem 0.9375rem;
   border-radius: 3.125rem;
   font-size: 1.25rem;
   display: inline-block;
@@ -182,10 +182,10 @@ input, textarea {
 /*Styles del sucursales*/
 .maps {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 30px;
+  grid-template-columns: repeat(auto-fit, minmax(18.75rem, 1fr));
+  gap: 1.875rem;
   justify-items: center;
-  padding: 20px;
+  padding: 1.25rem;
 }
 .maps .map-item {
   display: flex;
@@ -194,12 +194,12 @@ input, textarea {
 }
 .maps .map-item iframe {
   width: 100%;
-  max-width: 600px;
-  height: 450px;
+  max-width: 37.5rem;
+  height: 28.125rem;
   border: none;
 }
 .maps .map-item h5 {
-  margin-top: 10px;
+  margin-top: 0.625rem;
   text-align: center;
   font-family: montserrat3;
   padding: 1.25rem;
@@ -209,8 +209,8 @@ input, textarea {
 .h4 {
   font-family: montserrat2;
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 1.875rem;
+  padding-bottom: 1.25rem;
 }
 
 .accordion-button:not(.collapsed) {
@@ -241,7 +241,7 @@ input, textarea {
   justify-content: center;
   align-items: center;
   font-family: montserrat3;
-  padding: 10px;
+  padding: 0.625rem;
   list-style: none;
 }
 
@@ -255,7 +255,7 @@ input, textarea {
 }
 
 .cuidado ul {
-  padding: 10px;
+  padding: 0.625rem;
 }
 
 .cuidado p {
@@ -272,12 +272,16 @@ input, textarea {
   padding: 2rem;
 }
 
+.catalogos button {
+  padding: 0.625rem;
+}
+
 .card {
   justify-self: center; /* centra cada tarjeta si es más chica que su celda */
 }
 
 /*Media queries*/
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .u-destacado {
     display: flex;
     flex-direction: column;
@@ -291,12 +295,12 @@ input, textarea {
     align-items: center;
   }
   .map-item {
-    width: 200px;
-    height: 200px;
+    width: 12.5rem;
+    height: 12.5rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
   }
   .maph5 {
     display: none;
@@ -304,8 +308,8 @@ input, textarea {
   .h4 {
     font-family: montserrat2;
     text-align: center;
-    padding-top: 20px;
-    padding-bottom: 15px;
+    padding-top: 1.25rem;
+    padding-bottom: 0.9375rem;
   }
   .accordion-button:not(.collapsed) {
     background-color: white !important;
@@ -321,7 +325,7 @@ input, textarea {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding: 10px;
+    padding: 0.625rem;
   }
   .cambiosp {
     width: 90%; /* más ancho en móviles */
@@ -333,7 +337,7 @@ input, textarea {
     justify-content: center;
     align-items: center;
     font-family: montserrat3;
-    padding: 8px;
+    padding: 0.5rem;
     list-style: none;
     text-align: center;
   }
@@ -347,12 +351,12 @@ input, textarea {
     text-align: center;
   }
   .cuidado ul {
-    padding: 10px;
+    padding: 0.625rem;
   }
   .cuidado p {
     text-align: center;
     font-family: montserrat3;
-    padding: 0 10px;
+    padding: 0 0.625rem;
   }
   .catalogos {
     display: flex;
@@ -360,7 +364,7 @@ input, textarea {
     align-items: center;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .u-destacado {
     display: flex;
     flex-direction: column;
@@ -374,12 +378,12 @@ input, textarea {
     align-items: center;
   }
   .map-item {
-    width: 250px;
-    height: 250px;
+    width: 15.625rem;
+    height: 15.625rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 1.25rem;
   }
   .maph5 {
     display: none;
@@ -442,10 +446,10 @@ a.sin-decoracion:hover {
 .remeras {
   background-color: #191716;
   color: #fff;
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;
+  height: 18.75rem;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   transition: all 0.3s ease;
   cursor: pointer;
   display: flex;
@@ -457,7 +461,7 @@ a.sin-decoracion:hover {
   background-color: #fff;
   transform: scale(1.01);
   color: #191716;
-  border-width: 2px;
+  border-width: 0.125rem;
   border-color: #191716;
   border-style: solid;
 }
@@ -465,10 +469,10 @@ a.sin-decoracion:hover {
 .buzos {
   background-color: #191716;
   color: #fff;
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;
+  height: 18.75rem;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   transition: all 0.3s ease;
   cursor: pointer;
   display: flex;
@@ -480,7 +484,7 @@ a.sin-decoracion:hover {
   background-color: #fff;
   transform: scale(1.01);
   color: #191716;
-  border-width: 2px;
+  border-width: 0.125rem;
   border-color: #191716;
   border-style: solid;
 }
@@ -488,10 +492,10 @@ a.sin-decoracion:hover {
 .short {
   background-color: #191716;
   color: #fff;
-  width: 300px;
-  height: 300px;
+  width: 18.75rem;
+  height: 18.75rem;
   text-align: center;
-  border-radius: 10px;
+  border-radius: 0.625rem;
   transition: all 0.3s ease;
   cursor: pointer;
   display: flex;
@@ -503,7 +507,7 @@ a.sin-decoracion:hover {
   background-color: #fff;
   transform: scale(1.01);
   color: #191716;
-  border-width: 2px;
+  border-width: 0.125rem;
   border-color: #191716;
   border-style: solid;
 }
@@ -514,7 +518,7 @@ a.sin-decoracion:hover {
   font-family: montserrat;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   .catalogo {
     display: flex;
     flex-direction: column;
@@ -522,25 +526,25 @@ a.sin-decoracion:hover {
     align-items: center;
   }
   .remeras {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    margin: 20px;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
   }
   .buzos {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    margin: 20px;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
   }
   .short {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    margin: 20px;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 64rem) {
   .catalogo {
     display: flex;
     flex-direction: column;
@@ -548,22 +552,22 @@ a.sin-decoracion:hover {
     align-items: center;
   }
   .remeras {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    margin: 20px;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
   }
   .buzos {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    margin: 20px;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
   }
   .short {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    margin: 20px;
+    width: 12.5rem;
+    height: 12.5rem;
+    padding: 1.25rem;
+    margin: 1.25rem;
   }
 }
 * {
