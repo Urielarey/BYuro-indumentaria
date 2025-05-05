@@ -139,6 +139,11 @@ nav {
 }
 
 /*Styles del Contacto*/
+.contacto {
+  background-color: #191716;
+  margin-bottom: 3.125rem;
+}
+
 .form-wrapper {
   display: flex;
   justify-content: center;
