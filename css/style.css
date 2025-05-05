@@ -570,6 +570,10 @@ a.sin-decoracion:hover {
     margin: 1.25rem;
   }
 }
+body {
+  background-color: #fff;
+}
+
 * {
   padding: 0;
   margin: 0;

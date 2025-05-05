@@ -5,6 +5,17 @@
 @import "_mixins";
 @import "_aside";
 
+$theme: light;
+
+body{
+    @if $theme == light{
+        background-color: #fff;
+    } @else if $theme == dark{
+        background-color: #fff;
+    }
+}
+
+
 *{
     padding: 0;
     margin: 0;
