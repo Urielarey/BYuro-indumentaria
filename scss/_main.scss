@@ -49,11 +49,15 @@
     cursor: pointer;
     transition: all 0.3s ease;
     font-family: montserrat;
+    padding: .625rem;
     &:hover {
         background-color: #fff;
         transform: scale(1.01);
         color: $second-color;
     }
+}
+.u-destacado a{
+    margin: 15px;
 }
 /*Styles del Contacto*/
 .form-wrapper {
@@ -93,12 +97,18 @@ input,textarea {
     padding: .625rem;
     background-color: $second-color;
     color: white;
-    border: none;
+    border-width: .0625rem;
+    border-color: #fff;
+    border-style: solid;
     border-radius: .25rem;
     cursor: pointer;
 }
 .send:hover {
-    background-color: #218838;
+    background-color: #fff;
+    color: $second-color;
+    border-width: .0625rem;
+    border-color: $second-color;
+    border-style: solid;
 }
 .contactame {
     color: #5e5757;
@@ -182,10 +192,6 @@ input,textarea {
     justify-content: center; /* centra el grid horizontalmente */
     padding: 2rem;
 }
-.catalogos button{
-    padding: .625rem;
-}
-
 .card {
     justify-self: center; /* centra cada tarjeta si es más chica que su celda */
 }

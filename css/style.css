@@ -113,11 +113,16 @@ nav {
   cursor: pointer;
   transition: all 0.3s ease;
   font-family: montserrat;
+  padding: 0.625rem;
 }
 .button:hover {
   background-color: #fff;
   transform: scale(1.01);
   color: #191716;
+}
+
+.u-destacado a {
+  margin: 15px;
 }
 
 /*Styles del Contacto*/
@@ -163,13 +168,19 @@ input, textarea {
   padding: 0.625rem;
   background-color: #191716;
   color: white;
-  border: none;
+  border-width: 0.0625rem;
+  border-color: #fff;
+  border-style: solid;
   border-radius: 0.25rem;
   cursor: pointer;
 }
 
 .send:hover {
-  background-color: #218838;
+  background-color: #fff;
+  color: #191716;
+  border-width: 0.0625rem;
+  border-color: #191716;
+  border-style: solid;
 }
 
 .contactame {
@@ -270,10 +281,6 @@ input, textarea {
   gap: 2rem; /* espacio entre las cards */
   justify-content: center; /* centra el grid horizontalmente */
   padding: 2rem;
-}
-
-.catalogos button {
-  padding: 0.625rem;
 }
 
 .card {
