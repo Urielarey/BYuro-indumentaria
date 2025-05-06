@@ -1,4 +1,9 @@
-@charset "UTF-8";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .u-envios {
   display: flex;
   justify-content: center;
@@ -47,20 +52,12 @@ nav {
   src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
   font-weight: 400;
 }
-.logo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-
 /*Styles del index*/
 .winter {
   background-color: #191716;
   width: 100%;
 }
-
-.winterArticle {
+.winter .winterArticle {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -69,26 +66,11 @@ nav {
   color: #fff;
   font-family: montserrat;
 }
-
-.fadeIn {
-  opacity: 0;
-  animation: myAnimation 0.5s infinite;
-}
-
-@keyframes myAnimation {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-.mi-carousel {
+.winter .mi-carousel {
   max-width: 18.75rem;
   max-height: 21.875rem;
 }
-
-.mi-carousel img {
+.winter .mi-carousel img {
   object-fit: cover;
   height: 100%;
 }
@@ -99,24 +81,14 @@ nav {
   justify-content: center;
   align-items: center;
 }
-
-.imgdestacado {
+.u-destacado .imgdestacado {
   padding-top: 1.875rem;
   padding-bottom: 3.125rem;
   padding-right: 1.25rem;
   padding-left: 1.25rem;
 }
-
-.pimg {
-  padding: 1.25rem;
-  text-align: center;
-  font-family: montserrat;
-}
-
-.h2 {
-  font-family: montserrat;
-  text-align: center;
-  padding-top: 1.875rem;
+.u-destacado a {
+  margin: 15px;
 }
 
 .button {
@@ -134,25 +106,19 @@ nav {
   color: #191716;
 }
 
-.u-destacado a {
-  margin: 15px;
-}
-
 /*Styles del Contacto*/
 .contacto {
   background-color: #191716;
   margin-bottom: 3.125rem;
 }
-
-.form-wrapper {
+.contacto .form-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 3.125rem 1.25rem;
   font-family: montserrat3;
 }
-
-.form-container {
+.contacto .form-container {
   background: white;
   padding: 1.25rem;
   border-radius: 0.5rem;
@@ -163,25 +129,21 @@ nav {
   width: 100%;
   max-width: 25rem;
 }
-
-.form-container h2 {
+.contacto .form-container h2 {
   text-align: center;
   margin-bottom: 0.625rem;
 }
-
-label {
+.contacto label {
   margin-top: 0.625rem;
 }
-
-input, textarea {
+.contacto input, .contacto textarea {
   width: 100%;
   padding: 0.625rem;
   border: 0.0625rem solid #ccc;
   border-radius: 0.25rem;
   resize: vertical;
 }
-
-.send {
+.contacto .send {
   width: 100%;
   padding: 0.625rem;
   background-color: #191716;
@@ -191,17 +153,16 @@ input, textarea {
   border-style: solid;
   border-radius: 0.25rem;
   cursor: pointer;
+  transition: all 0.3s ease;
 }
-
-.send:hover {
+.contacto .send:hover {
   background-color: #fff;
   color: #191716;
   border-width: 0.0625rem;
   border-color: #191716;
   border-style: solid;
 }
-
-.contactame {
+.contacto .contactame {
   color: #5e5757;
   font-size: 0.75rem;
   padding-top: 0.625rem;
@@ -248,23 +209,15 @@ input, textarea {
   box-shadow: none;
 }
 
-.cambios h6 {
-  text-align: center;
-  font-family: montserrat2;
-}
-
-.contenedorp {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.cambiosp {
+.cambios .cambiosp {
   width: 50%;
   font-family: montserrat3;
   text-align: center;
 }
-
+.cambios .h6 {
+  text-align: center;
+  font-family: montserrat2;
+}
 .cambios li {
   display: flex;
   justify-content: center;
@@ -282,11 +235,9 @@ input, textarea {
   padding-bottom: 1.875rem;
   list-style: none;
 }
-
 .cuidado ul {
   padding: 0.625rem;
 }
-
 .cuidado p {
   text-align: center;
   font-family: montserrat3;
@@ -295,14 +246,13 @@ input, textarea {
 /*Styles para remeras, buzos y short*/
 .catalogos {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 columnas iguales */
-  gap: 2rem; /* espacio entre las cards */
-  justify-content: center; /* centra el grid horizontalmente */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  justify-content: center;
   padding: 2rem;
 }
-
-.card {
-  justify-self: center; /* centra cada tarjeta si es más chica que su celda */
+.catalogos .card {
+  justify-self: center;
 }
 
 /*Media queries*/
@@ -353,7 +303,7 @@ input, textarea {
     padding: 0.625rem;
   }
   .cambiosp {
-    width: 90%; /* más ancho en móviles */
+    width: 90%;
     font-family: montserrat3;
     text-align: center;
   }
@@ -595,10 +545,57 @@ a.sin-decoracion:hover {
     margin: 1.25rem;
   }
 }
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+.fadeIn {
+  opacity: 0;
+  animation: myAnimation 0.5s infinite;
+}
+
+@keyframes myAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@font-face {
+  font-family: montserrat;
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: montserrat2;
+  src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: montserrat3;
+  src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 400;
+}
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.h2 {
+  font-family: montserrat;
+  text-align: center;
+  padding-top: 1.875rem;
+}
+
+.pimg {
+  padding: 1.25rem;
+  text-align: center;
+  font-family: montserrat;
+}
+
+.contenedorp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /*# sourceMappingURL=style.css.map */

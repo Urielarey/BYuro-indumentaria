@@ -1,12 +1,10 @@
+@import "_base";
 @import "_variables";
 @import "_header";
-@import "_main";
+@import "_components";
 @import "_footer";
 @import "_mixins";
 @import "_aside";
+@import "_animation";
+@import "_layout";
 
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
