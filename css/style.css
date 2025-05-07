@@ -302,7 +302,7 @@ nav {
     flex-direction: column;
     padding: 0.625rem;
   }
-  .cambiosp {
+  .cambios .cambiosp {
     width: 90%;
     font-family: montserrat3;
     text-align: center;
