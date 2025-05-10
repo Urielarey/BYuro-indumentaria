@@ -194,6 +194,18 @@
     }
 }
 
+/*Styles para carrito*/
+.carrito {
+    border-bottom: .0625rem solid;
+    @include ucard(flex, column, center, center);
+    padding-bottom: 6.25rem;
+.carrito a{
+    text-decoration: none;
+}
+button{
+    margin: 1.25rem;
+}
+}
 
 /*Media queries*/
 @media (max-width: $mobile) {

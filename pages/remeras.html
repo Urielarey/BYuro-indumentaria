@@ -45,6 +45,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="ayuda.html">Ayuda</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="carrito.html">Carrito 🛒</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -62,67 +65,84 @@
           <div class="card" style="width: 18rem;">
             <img src="../assets/KOK1.webp" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="pimg"> Remera Oversize One
-                $40.000
-              </p>
-              <a href="remeras.html">
-                <button class="button">COMPRAR</button>
-              </a>
+              <p class="pimg">Remera Oversize One<br>$40.000</p>
+              <button
+                class="button comprar-btn"
+                data-nombre="Remera Oversize One"
+                data-precio="40000"
+              >
+                COMPRAR
+              </button>
             </div>
           </div>
+
           <div class="card" style="width: 18rem;">
             <img src="../assets/kok5.webp" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="pimg"> Remera Oversize Two
-                $50.000
-              </p>
-              <a href="remeras.html">
-                <button class="button">COMPRAR</button>
-              </a>
+              <p class="pimg">Remera Oversize Two<br>$50.000</p>
+              <button
+                class="button comprar-btn"
+                data-nombre="Remera Oversize Two"
+                data-precio="50000"
+              >
+                COMPRAR
+              </button>
             </div>
           </div>
+
           <div class="card" style="width: 18rem;">
             <img src="../assets/kok8.webp" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="pimg"> Remera Oversize Three
-                $45.000
-              </p>
-              <a href="remeras.html">
-                <button class="button">COMPRAR</button>
-              </a>
+              <p class="pimg">Remera Oversize Three<br>$45.000</p>
+              <button
+                class="button comprar-btn"
+                data-nombre="Remera Oversize Three"
+                data-precio="45000"
+              >
+                COMPRAR
+              </button>
             </div>
           </div>
+
           <div class="card" style="width: 18rem;">
             <img src="../assets/KOK1.webp" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="pimg"> Remera Oversize One
-                $40.000
-              </p>
-              <a href="remeras.html">
-                <button class="button">COMPRAR</button>
-              </a>
+              <p class="pimg">Remera Oversize One<br>$40.000</p>
+              <button
+                class="button comprar-btn"
+                data-nombre="Remera Oversize One"
+                data-precio="40000"
+              >
+                COMPRAR
+              </button>
             </div>
           </div>
+
           <div class="card" style="width: 18rem;">
             <img src="../assets/kok5.webp" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="pimg"> Remera Oversize Two
-                $50.000
-              </p>
-              <a href="remeras.html">
-                <button class="button">COMPRAR</button>
-              </a>
+              <p class="pimg">Remera Oversize Two<br>$50.000</p>
+              <button
+                class="button comprar-btn"
+                data-nombre="Remera Oversize Two"
+                data-precio="50000"
+              >
+                COMPRAR
+              </button>
             </div>
           </div>
+
           <div class="card" style="width: 18rem;">
             <img src="../assets/kok8.webp" class="card-img-top" alt="...">
             <div class="card-body">
-              <p class="pimg"> Remera Oversize Three
-                $45.000
-              </p>
-              <a href="remeras.html">
-                <button class="button">COMPRAR</button>
-              </a>
+              <p class="pimg">Remera Oversize Three<br>$45.000</p>
+              <button
+                class="button comprar-btn"
+                data-nombre="Remera Oversize Three"
+                data-precio="45000"
+              >
+                COMPRAR
+              </button>
             </div>
           </div>
         </article>
@@ -138,6 +158,23 @@
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
       AOS.init();
-    </script> 
+    </script>
+    <script>
+      // Iniciamos el carrito desde localStorage o vacío
+      let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
+
+      // Escuchar todos los botones
+      document.querySelectorAll('.comprar-btn').forEach(boton => {
+        boton.addEventListener('click', () => {
+          const nombre = boton.dataset.nombre;
+          const precio = parseInt(boton.dataset.precio);
+
+          carrito.push({ nombre, precio });
+          localStorage.setItem('carrito', JSON.stringify(carrito));
+
+          alert(`${nombre} agregado al carrito`);
+        });
+      });
+    </script>
   </body>
 </html>

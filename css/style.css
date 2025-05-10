@@ -255,6 +255,22 @@ nav {
   justify-self: center;
 }
 
+/*Styles para carrito*/
+.carrito {
+  border-bottom: 0.0625rem solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 6.25rem;
+}
+.carrito .carrito a {
+  text-decoration: none;
+}
+.carrito button {
+  margin: 1.25rem;
+}
+
 /*Media queries*/
 @media (max-width: 48rem) {
   .u-destacado {
@@ -412,6 +428,7 @@ a.sin-decoracion:hover {
   align-items: center;
   padding: 30px;
   font-family: montserrat2;
+  padding-bottom: 6.25rem;
 }
 
 .catalogo a {
