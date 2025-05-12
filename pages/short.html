@@ -15,46 +15,52 @@
       <article class="u-envios">
         <h6>Envio a todo el pais 🚚</h6>
       </article>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html">BYuro Indumentaria</a>
-          <a class="navbar-brand ms-auto d-lg-none" href="carrito.html">
-            <img src="../assets/carrito2.PNG" alt="Carrito" width="30" height="24">
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="../index.html">BYuro Indumentaria</a>
+    <a class="navbar-brand ms-auto d-lg-none position-relative" href="carrito.html">
+      <img src="../assets/carrito2.PNG" alt="Carrito" width="30" height="24">
+      <span id="cart-count" class="u-cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill">
+        0
+      </span>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="../index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contacto.html">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="sucursales.html">Sucursales</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+            Catálogo
           </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavDropdown">
-            <ul class="navbar-nav me-auto">
-              <li class="nav-item">
-                <a class="nav-link active" href="../index.html">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="contacto.html">Contacto</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="sucursales.html">Sucursales</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                  Catálogo
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="remeras.html">Remeras</a></li>
-                  <li><a class="dropdown-item" href="buzos.html">Buzos y Camperas</a></li>
-                  <li><a class="dropdown-item" href="short.html">Pantalones y Shorts</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="ayuda.html">Ayuda</a>
-              </li>
-            </ul>
-            <a class="navbar-brand d-none d-lg-block" href="carrito.html">
-              <img src="../assets/carrito2.PNG" alt="Carrito" width="30" height="24">
-            </a>
-          </div>
-        </div>
-      </nav>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="remeras.html">Remeras</a></li>
+            <li><a class="dropdown-item" href="buzos.html">Buzos y Camperas</a></li>
+            <li><a class="dropdown-item" href="short.html">Pantalones y Shorts</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="ayuda.html">Ayuda</a>
+        </li>
+      </ul>
+      <a class="navbar-brand d-none d-lg-block position-relative" href="carrito.html">
+        <img src="../assets/carrito2.PNG" alt="Carrito" width="30" height="24">
+        <span id="cart-count" class="u-cart-count position-absolute top-0 start-100 translate-middle badge rounded-pill">
+          0
+        </span>
+      </a>
+    </div>
+  </div>
+</nav>
     </header>
     <main>
       <section class="logo">
@@ -162,22 +168,6 @@
     <script>
       AOS.init();
     </script>
-        <script>
-      // Iniciamos el carrito desde localStorage o vacío
-      let carrito = JSON.parse(localStorage.getItem('carrito')) || [];
-
-      // Escuchar todos los botones
-      document.querySelectorAll('.comprar-btn').forEach(boton => {
-        boton.addEventListener('click', () => {
-          const nombre = boton.dataset.nombre;
-          const precio = parseInt(boton.dataset.precio);
-
-          carrito.push({ nombre, precio });
-          localStorage.setItem('carrito', JSON.stringify(carrito));
-
-          alert(`${nombre} agregado al carrito`);
-        });
-      });
-    </script>
+    <script src="../js/carrito.js"></script>
   </body>
 </html>

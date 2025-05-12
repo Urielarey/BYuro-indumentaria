@@ -16,3 +16,6 @@
 .contenedorp{
     @include uflex(flex, center, center);
 }
+.u-cart-count{
+    background-color: $second-color;
+}
