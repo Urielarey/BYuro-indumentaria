@@ -4,6 +4,21 @@
   box-sizing: border-box;
 }
 
+@font-face {
+  font-family: montserrat;
+  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: montserrat2;
+  src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
+  font-weight: 400;
+}
+@font-face {
+  font-family: montserrat3;
+  src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
+  font-weight: 400;
+}
 .u-envios {
   display: flex;
   justify-content: center;
@@ -42,21 +57,6 @@ nav {
   transform: scale(1.01);
 }
 
-@font-face {
-  font-family: montserrat;
-  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: montserrat2;
-  src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: montserrat3;
-  src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
-  font-weight: 400;
-}
 /*Styles del index*/
 .winter {
   background-color: #191716;
@@ -411,21 +411,6 @@ a.sin-decoracion:hover {
   color: #F7E8A4;
 }
 
-@font-face {
-  font-family: montserrat;
-  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: montserrat2;
-  src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: montserrat3;
-  src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
-  font-weight: 400;
-}
 .catalogo {
   display: flex;
   flex-direction: row;
@@ -579,21 +564,6 @@ a.sin-decoracion:hover {
   100% {
     opacity: 1;
   }
-}
-@font-face {
-  font-family: montserrat;
-  src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: montserrat2;
-  src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype");
-  font-weight: 400;
-}
-@font-face {
-  font-family: montserrat3;
-  src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype");
-  font-weight: 400;
 }
 .logo {
   display: flex;

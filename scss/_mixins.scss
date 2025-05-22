@@ -9,17 +9,3 @@
     justify-content: $justify-content;
     align-items: $align-items;
 }
-
-
-@font-face {
-    font-family: montserrat;
-    src: url("../assets/fonts/Montserrat-SemiBold.ttf") format("truetype"); font-weight: 400;
-}
-@font-face {
-    font-family: montserrat2;
-    src: url("../assets/fonts/Montserrat-Medium.ttf") format("truetype"); font-weight: 400;
-}
-@font-face {
-    font-family: montserrat3;
-    src: url("../assets/fonts/Montserrat-Light.ttf") format("truetype"); font-weight: 400;
-}
